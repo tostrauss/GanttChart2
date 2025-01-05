@@ -1,0 +1,85 @@
+<div class="container mt-3">
+    <h2>Data Input</h2>
+    <form (ngSubmit)="addTask()" class="mt-4">
+      <div class="mb-3">
+        <label for="dependencies" class="form-label">Dependencies</label>
+        <input
+          id="dependencies"
+          class="form-control"
+          type="text"
+          [(ngModel)]="dependencies"
+          name="dependencies"
+          placeholder="Enter task dependencies (e.g. 1,2)"
+        />
+      </div>
+  
+      <div class="mb-3">
+        <label for="name" class="form-label">Task Name</label>
+        <input
+          id="name"
+          class="form-control"
+          type="text"
+          [(ngModel)]="name"
+          name="name"
+          placeholder="Enter task name"
+          required
+        />
+      </div>
+  
+      <div class="mb-3">
+        <label for="start" class="form-label">Start Date</label>
+        <input
+          id="start"
+          class="form-control"
+          type="date"
+          [(ngModel)]="startDate"
+          name="start"
+          required
+        />
+      </div>
+  
+      <div class="mb-3">
+        <label for="end" class="form-label">End Date</label>
+        <input
+          id="end"
+          class="form-control"
+          type="date"
+          [(ngModel)]="endDate"
+          name="end"
+          required
+        />
+      </div>
+  
+      <div class="mb-3">
+        <label for="priority" class="form-label">Priority</label>
+        <select
+          id="priority"
+          class="form-select"
+          [(ngModel)]="priority"
+          name="priority"
+        >
+          <option>Low</option>
+          <option>Medium</option>
+          <option>High</option>
+        </select>
+      </div>
+  
+      <div class="mb-3">
+        <label for="percentageOfCompletion" class="form-label">
+          Percentage of Completion
+        </label>
+        <input
+          id="percentageOfCompletion"
+          class="form-control"
+          type="number"
+          [(ngModel)]="percentageOfCompletion"
+          name="percentageOfCompletion"
+          min="0"
+          max="100"
+        />
+      </div>
+  
+      <button class="btn btn-primary">Add Task</button>
+    </form>
+  </div>
+  

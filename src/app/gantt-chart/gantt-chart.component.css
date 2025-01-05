@@ -1,0 +1,9 @@
+.container {
+    max-width: 900px;
+  }
+  
+  .gantt-container {
+    border: 1px solid #ccc;
+    min-height: 300px;
+  }
+  
