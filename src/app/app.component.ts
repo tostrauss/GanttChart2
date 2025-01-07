@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { GanttChartComponent } from "./gantt-chart/gantt-chart.component";
 
 @Component({
   standalone: true,
@@ -12,6 +13,8 @@ import { CommonModule } from '@angular/common';
     RouterLink,
     RouterLinkActive,
     RouterOutlet
-  ]
+]
 })
-export class AppComponent {}
+export class AppComponent {
+  [x: string]: any;
+}

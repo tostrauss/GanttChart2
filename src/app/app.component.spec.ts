@@ -17,7 +17,7 @@ describe('AppComponent', () => {
   it(`should have the 'GanttChartApp2' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('GanttChartApp2');
+    expect(app['title']).toEqual('GanttChartApp2');
   });
 
   it('should render title', () => {
