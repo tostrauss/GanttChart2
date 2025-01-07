@@ -2,8 +2,22 @@
     max-width: 900px;
   }
   
-  .gantt-container {
+.gantt-container {
     border: 1px solid #ccc;
-    min-height: 300px;
+    min-height: 500px;
+    position: relative;
   }
-  
+
+.today_marker {
+    background-color: #FF5722; /* bright orange line */
+    width: 2px; /* line thickness */
+  }
+.gantt-priority-high .gantt_task_content {
+    background-color: #e74c3c !important; /* red */
+  }
+.gantt-priority-medium .gantt_task_content {
+    background-color: #f39c12 !important; /* orange */
+  }
+.gantt-priority-low .gantt_task_content {
+    background-color: #2ecc71 !important; /* green */
+  }
