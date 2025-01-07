@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Subscription } from 'rxjs';
 import 'dhtmlx-gantt';
 import { TaskService } from '../services/task.service';
-import { Task } from '../models/task.model';
+// import { Task } from '../models/task.model';
 
 declare let gantt: any;
 
